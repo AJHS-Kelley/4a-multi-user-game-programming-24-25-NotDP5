@@ -1,7 +1,7 @@
 using System;
 class Template {
   static void Main() {
-    
+   
 
 // Player Variables
 string playerName = "Test Name";
@@ -28,11 +28,12 @@ else if (isCorrect == "no")
   Console.WriteLine ("Please enter your name and hit enter.");
   playerName = Console.ReadLine();
 }
-else 
+else
 {
   Console.WriteLine ($"Unable to process your request. Please truy again.");
 }
 
+Console.WriteLine ("                                ");
 Console.WriteLine ("Rules for this bot:");
 Console.WriteLine ("You will choose Rock, Paper, or Scissors and the CPU will do the same at random.");
 Console.WriteLine ("A winner will be decided by the regular rock paper scissors rules:");
@@ -47,7 +48,7 @@ if (isCorrect2 == "yes")
 }
 else
 {
-  Console.WriteLine ("Please reread the rules until they make sense.");
+  Console.WriteLine ("Please reread the rules until they make sense and type in yes.");
   playerName = Console.ReadLine();
 }
 
@@ -56,10 +57,10 @@ while (playerScore < 5 && cpuScore < 5)
   //Print the scores.
   Console.WriteLine ($"Your Score: {playerScore} CPU Score: {cpuScore}");
 
-  // Allow the player to select Rock, Paper, or Scissors. 
+  // Allow the player to select Rock, Paper, or Scissors.
   Console.WriteLine ("Please choose rock, paper, or scissors.");
   playerChoice = Console.ReadLine().ToLower();
-  if (playerChoice != "rock" && playerChoice != "paper" && playerChoice != "scissors") 
+  if (playerChoice != "rock" && playerChoice != "paper" && playerChoice != "scissors")
   {
   Console.WriteLine ("Please choose rock, paper, or scissors.");
   playerChoice = Console.ReadLine().ToLower();
@@ -85,7 +86,7 @@ while (playerScore < 5 && cpuScore < 5)
     Console.WriteLine ("Unable to determine a CPU choice.");
   }
   Console.WriteLine ($"CPU choice {cpuChoice}");
-  // Compare the choices and determine a winner. 
+  // Compare the choices and determine a winner.
   if (playerChoice == "rock" && cpuChoice == "paper")
   {
     Console.WriteLine ($"You chose {playerChoice} and the CPU chose {cpuChoice}");
