@@ -22,7 +22,7 @@ class Template {
 
   Console.WriteLine (" ");
   while (loopCount < loopReqs)
-  {
+  { // LOOP STARTS HERE 
     Random rnd = new Random();
     int cpuRand = rnd.Next(0,2);
     if (cpuRand == 0)
@@ -42,10 +42,10 @@ class Template {
      Console.WriteLine ("Unable to determine a CPU choice.");
     }
 
-  }
+  } // LOOP ENDS HERE
 
 
-
+// Lines 49 -- 113 need to be INSIDE the loop.  
   Console.WriteLine (" ");
   Console.WriteLine ($"CPU choice {cpuChoice}");
   // Compare the choices and determine a winner.
@@ -112,7 +112,7 @@ class Template {
     numDraws++;
   }
   }
-	loopCount++
+	
   // Output the results to the screen.
   // Give the winner a point.
   loopCount++;
