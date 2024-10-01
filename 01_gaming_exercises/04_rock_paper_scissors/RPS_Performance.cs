@@ -27,19 +27,19 @@ class Template {
     int cpuRand = rnd.Next(0,2);
     if (cpuRand == 0)
     {
-      cpuChoice = "rock";
+        cpuChoice = "rock";
     }
     else if (cpuRand == 1)
     {
-      cpuChoice = "paper";
+        cpuChoice = "paper";
     }
     else if (cpuRand == 2)
     {
-      cpuChoice = "scissors";
+        cpuChoice = "scissors";
     }
     else
     {
-     Console.WriteLine ("Unable to determine a CPU choice.");
+        Console.WriteLine ("Unable to determine a CPU choice.");
     }
 
   } // LOOP ENDS HERE
