@@ -21,9 +21,10 @@ class Template {
   loopReqs = Convert.ToInt32(Console.ReadLine());
 
   Console.WriteLine (" ");
+  Random rnd = new Random();
   while (loopCount < loopReqs)
   { // LOOP STARTS HERE 
-    Random rnd = new Random();
+    
     int cpuRand = rnd.Next(0,2);
     if (cpuRand == 0)
     {
