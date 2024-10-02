@@ -41,11 +41,7 @@ class Template {
     {
         Console.WriteLine ("Unable to determine a CPU choice.");
     }
-
-  } // LOOP ENDS HERE
-
-
-// Lines 49 -- 113 need to be INSIDE the loop.  
+    // Lines 49 -- 113 need to be INSIDE the loop.  
   Console.WriteLine (" ");
   Console.WriteLine ($"CPU choice {cpuChoice}");
   // Compare the choices and determine a winner.
@@ -112,14 +108,13 @@ class Template {
     numDraws++;
   }
   }
-	
+	loopCount++;
   // Output the results to the screen.
   // Give the winner a point.
-  loopCount++;
   
-}
-
 Console.WriteLine ($"Player Score: {playerScore}");
 Console.WriteLine ($"CPU Score: {cpuScore}");
 Console.WriteLine ($"Draws: {numDraws}");
+   }
+}
 
