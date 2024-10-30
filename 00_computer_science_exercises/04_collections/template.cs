@@ -42,6 +42,15 @@ class Collections {
     Console.WriteLine ("The length of the testScores array is: " + testScores.Length);
     Console.WriteLine ("The length of the GPA array is: " + GPA.Length);
 
+    Console.WriteLine (" ");
+    // .Length is known as a property of the array. 
+    // Accessing elements in the array with the index.
+    Console.WriteLine ("The first element in breakFast is: " + breakfastFoods[0]);
+    Console.WriteLine ("The first element in testScores is: " + testScores[3]);
+    Console.WriteLine ("The first element in GPA is: " + breakfastFoods[4]);
+
+    
+
 
 
   } // NEVER CHANGE THIS LINE
