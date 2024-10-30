@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Collections;
 
-class 04_Collections {
+class Collections {
   static void Main() { // Do not delete
     
     /*
@@ -17,14 +17,30 @@ class 04_Collections {
     */
 
     // Declaring and defining an array
-    string [] breakfast food = {"Pancakes", "Eggs", "Waffle", "Bacon", "Cereal"};
-    int [] testScore = {0, 25, 15, 75, 99};
+    string [] breakfastFoods = {"Pancakes", "Eggs", "Waffle", "Bacon", "Cereal"};
+    int [] testScores = {0, 25, 15, 75, 99};
     double[] GPA = {0.27D, 1.99D, 4.02D, 0.0D, 3.25D};
 
     // Print Array Content -- All Elements on Single Line 
-    Console.WriteLine ("The elements of eacg array are:");
-    Console.WriteLine ("breakFastFoods: \n" + String.Join(", ", breakfastFoods));
+    Console.WriteLine ("The elements of each array are:");
+    Console.WriteLine (" ");
+    Console.WriteLine ("breakFastFoods: \n" + String.Join("\n", breakfastFoods));
     Console.WriteLine (); // Print an empty line to the screen. 
+    
+    Console.WriteLine ("The elements of each array are:");
+    Console.WriteLine (" ");
+    Console.WriteLine ("testScores: \n" + String.Join("\n", testScores));
+    Console.WriteLine (); // Print an empty line to the screen. 
+    
+    Console.WriteLine ("The elements of each array are:");
+    Console.WriteLine (" ");
+    Console.WriteLine ("GPA: \n" + String.Join("\n", GPA));
+    Console.WriteLine (); // Print an empty line to the screen. 
+
+    // How long is my array? Determing array length
+    Console.WriteLine ("The length of the breakFastFoods array is: " + breakfastFoods.Length);
+    Console.WriteLine ("The length of the testScores array is: " + testScores.Length);
+    Console.WriteLine ("The length of the GPA array is: " + GPA.Length);
 
 
 
