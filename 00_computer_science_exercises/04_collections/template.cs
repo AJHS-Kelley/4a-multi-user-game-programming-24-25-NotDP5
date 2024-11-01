@@ -75,6 +75,9 @@ class Collections {
     Console.WriteLine (); // Print an empty line to the screen. 
     */
 
+    // Sorting an array
+    int[] intArr = []
+
 
 
 
