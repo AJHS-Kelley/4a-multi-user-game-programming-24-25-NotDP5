@@ -26,7 +26,7 @@ class Collections {
     Console.WriteLine (" ");
     Console.WriteLine ("breakFastFoods: \n" + String.Join("\n", breakfastFoods));
     Console.WriteLine (); // Print an empty line to the screen. 
-    /*
+    
     Console.WriteLine ("The elements of each array are:");
     Console.WriteLine (" ");
     Console.WriteLine ("testScores: \n" + String.Join("\n", testScores));
@@ -64,7 +64,19 @@ class Collections {
     Console.WriteLine (" ");
     Console.WriteLine ("breakFastFoods: \n" + String.Join("\n", breakfastFoods));
     Console.WriteLine (); // Print an empty line to the screen. 
+    
+
+    // Common errors with arrays
+    // Console.WriteLine (breakfastFoods[99]); // Index out of bounds -- According index that does not exist in the array
+    
+    /*
+    testScores[0] = "99"; // Error message "Cannot implicitly convert dataType to dataType"
+    Console.WriteLine ("testScores: \n" + String.Join("\n", testScores));
+    Console.WriteLine (); // Print an empty line to the screen. 
     */
+
+
+
 
 
   } // NEVER CHANGE THIS LINE
