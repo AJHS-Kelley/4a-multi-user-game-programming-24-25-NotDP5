@@ -26,7 +26,7 @@ class Collections {
     Console.WriteLine (" ");
     Console.WriteLine ("breakFastFoods: \n" + String.Join("\n", breakfastFoods));
     Console.WriteLine (); // Print an empty line to the screen. 
-    
+    /*
     Console.WriteLine ("The elements of each array are:");
     Console.WriteLine (" ");
     Console.WriteLine ("testScores: \n" + String.Join("\n", testScores));
@@ -48,9 +48,23 @@ class Collections {
     Console.WriteLine ("The first element in breakFast is: " + breakfastFoods[0]);
     Console.WriteLine ("The first element in testScores is: " + testScores[3]);
     Console.WriteLine ("The first element in GPA is: " + breakfastFoods[4]);
-
     
+    Console.WriteLine (" ");
 
+    // Shortcut to access the last item in an array
+    Console.WriteLine ("the last element of breakFastFoods is: " + breakfastFoods[breakfastFoods.Length - 1]);
+    Console.WriteLine ("the last element of testScores is: " + testScores[testScores.Length - 1]);
+    Console.WriteLine ("the last element of GPA is: " + GPA[GPA.Length - 1]);
+    
+    // Changing elements in an array
+    breakfastFoods[2] = "Green Eggs and Ham";
+    testScores[0] = 56;
+    GPA[3] = 4.2D;
+    Console.WriteLine ("The elements of each array are:");
+    Console.WriteLine (" ");
+    Console.WriteLine ("breakFastFoods: \n" + String.Join("\n", breakfastFoods));
+    Console.WriteLine (); // Print an empty line to the screen. 
+    */
 
 
   } // NEVER CHANGE THIS LINE
