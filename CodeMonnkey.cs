@@ -122,24 +122,11 @@ class Program {
     }
 
     class Player {
-      Player() {
-        
+      public Player() {
+        console.WriteLine("Creating player.");
       }
     }
     
-
-
-
-
-
-
-
-
-
-
-    
-
-  
 
 
 
