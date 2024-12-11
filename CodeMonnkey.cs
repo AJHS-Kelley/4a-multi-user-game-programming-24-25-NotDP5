@@ -127,8 +127,60 @@ class Program {
       }
     }
     
+    // Do Naming Rules in video one
 
+    // ---------------------------------------------------------------------------------------------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------------------------
 
+    // Second Video
+
+    // Refactoring -- The act of rewriting or reorganizing code. It is a constant never-ending process. 
+    
+    // ---------------------------------------------------------------------------------------------------------------------------------
+
+    // Enums -- Helps define unique values with clear and understandable names
+
+    private enum playerAction {
+      NoEnemy,
+      NoPathToEnemy,
+      MovingTowardsEnemey,
+      AttackingEnemy
+    }
+
+    private enum State {
+      LookingForEnemy,
+      MovingToEnemey,
+      AttackingEnemy,
+    }
+
+    private void HandleSate() {
+      switch (state) {
+        case State.MovingToEnemey:
+            // Moving to Enemy logic
+            break;
+        case State.LookingForEnemy:
+            break;
+        case State.AttackingEnemy:
+            break;
+      }
+    }
+
+    private PlayerAction GetNextPlayerAction() {
+      if (!PlayerHasEnemy()) {
+        return PlayerAction.NoEnemy;
+      }
+      if (!HasPathToEnemy()) {
+        return PlayerAction.NoPathToEnemy;
+      }
+      if (!MovingTowardsEnemey()) {
+        return PlayerAction.MovingTowardsEnemey;
+      }
+      else {
+        return PlayerAction.AttackingEnemy;
+      }
+    }
 
 
 
