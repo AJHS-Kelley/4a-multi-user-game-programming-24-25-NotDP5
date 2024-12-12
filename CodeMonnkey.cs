@@ -1,10 +1,10 @@
 using System;
-class Program {
+class Program {}
   static void Main(string[] args) {
 
-// First Video
+    // First Video
 
-// Functions
+    // Functions
 
     Console.WriteLine("Hello New World");
     SayHello("CodeMonkey", 67);
@@ -142,6 +142,22 @@ class Program {
 
     // Enums -- Helps define unique values with clear and understandable names
 
+    // Before adding enums
+
+    // private void HandleSate() {
+      // switch (state) {
+        // case State.MovingToEnemey:
+            // Moving to Enemy logic
+            // break;
+        // case State.LookingForEnemy:
+            // break;
+        // case State.AttackingEnemy:
+            // break;
+      // }
+    // }
+
+    // After adding enums 
+    
     private enum playerAction {
       NoEnemy,
       NoPathToEnemy,
@@ -153,6 +169,13 @@ class Program {
       LookingForEnemy,
       MovingToEnemey,
       AttackingEnemy,
+    }
+
+    private State state;
+
+    private void Start() {
+      PlayerAction playerAction = playerAction.NoEnemy;
+      Debug.Log(playerAction); // Displays in console log that there are no enemies currently around the player
     }
 
     private void HandleSate() {
@@ -181,6 +204,46 @@ class Program {
         return PlayerAction.AttackingEnemy;
       }
     }
+
+    // ---------------------------------------------------------------------------------------------------------------------------------
+    // Properties -- Mix of a function of a variable
+
+    private static string playerName6;
+
+    // private static string PlayerName5 { get; set; } // Not truly a function. It does not store any data directly, but an "auto implemented property"
+    
+    private static string PlayerName5 { // Work the same way as the code above. 
+      get {
+        return PlayerName5;
+      }
+      set {
+        playerName6 = value
+      }
+    }
+    PlayerName5 = "David Ponder";
+    Console.WriteLine(PlayerName5); // Prints out the associated name 
+
+    // ---------------------------------------------------------------------------------------------------------------------------------
+    // Multi-Dimensional Arrays -- Stores collections of data in more than one dimension
+
+    namespace CodeMonkey_CSharpCourse {
+      public class Program {
+        private static void(string[] args) {
+          int[,] int Array = new int { { 1, 2, 3 }, { 4, 5, 6} };
+
+          for (int i=0; i < intArray.GetLength(0); i++) {
+            for (int i=0; i < intArray.GetLength(0); i++) {
+              Console.WriteLine(i + ", " + j + ": " + intArray[i, j]);
+          }
+        }
+      }
+    }
+
+
+
+
+
+
 
 
 
